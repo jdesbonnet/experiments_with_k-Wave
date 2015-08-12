@@ -509,8 +509,8 @@ end
 if numDim(rho0) == 2 && use_sg
     
     % rho0 is heterogeneous and staggered grids are used
-    rho0_sgx = interpn(kgrid.x, kgrid.y, rho0, kgrid.x + kgrid.dx/2, kgrid.y, '*linear');
-    rho0_sgy = interpn(kgrid.x, kgrid.y, rho0, kgrid.x, kgrid.y + kgrid.dy/2, '*linear');
+    rho0_sgx = interpn(kgrid.x, kgrid.y, rho0, kgrid.x + kgrid.dx/2, kgrid.y, 'linear');
+    rho0_sgy = interpn(kgrid.x, kgrid.y, rho0, kgrid.x, kgrid.y + kgrid.dy/2, 'linear');
     
     % set values outside of the interpolation range to original values 
     rho0_sgx(isnan(rho0_sgx)) = rho0(isnan(rho0_sgx));
