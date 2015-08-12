@@ -77,7 +77,7 @@ tone_burst_offset = 200 + element_spacing*element_index*sin(steering_angle*pi/18
 source.p = toneBurst(sampling_freq, tone_burst_freq, tone_burst_cycles, 'SignalOffset', tone_burst_offset);
 
 % assign the input options
-input_args = {'DisplayMask', source.p_mask};
+input_args = {'DisplayMask', source.p_mask, 'PlotSim', false};
 
 % run the simulation
 kspaceFirstOrder2D(kgrid, medium, source, [], input_args{:});
