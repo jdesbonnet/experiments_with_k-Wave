@@ -1,3 +1,3 @@
 # experiments_with_k-Wave
 
-Temporary Git repository as I experimetn with using k-Wave.org with octave.
+Temporary Git repository as I experiment with using k-Wave.org and octave.
